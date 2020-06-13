@@ -10,6 +10,11 @@ import { WomenComponent } from './women/women.component';
 import { MenComponent } from './men/men.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { BlousesComponent } from './blouses/blouses.component';
+import { BottomsComponent } from './bottoms/bottoms.component';
+import { TraditionalComponent } from './traditional/traditional.component';
+import { EthnicComponent } from './ethnic/ethnic.component';
+import { WaccessoriesComponent } from './waccessories/waccessories.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,12 @@ import { FooterComponent } from './footer/footer.component';
     AboutusComponent,
     WomenComponent,
     MenComponent,
-    FooterComponent
+    FooterComponent,
+    BlousesComponent,
+    BottomsComponent,
+    TraditionalComponent,
+    EthnicComponent,
+    WaccessoriesComponent
   ],
   imports: [
     BrowserModule,

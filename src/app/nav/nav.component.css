@@ -1,0 +1,65 @@
+.logo-name{
+    font-size: larger;
+    font-family: comic sans ms;
+    text-align: center;
+    background-color: aqua;
+    font-weight: 600;
+}
+.nav-item{
+    margin-right: 15%;
+    color: black;
+    font-weight: 500;
+}
+.nav-link{
+    margin-right: 15%;
+}
+.nav-link:hover{
+   
+    color: #fc2779;
+    }
+    .nav-link:active{
+        color: #fc2779;
+    }
+#dropdown{
+    position: relative;
+    display: inline-block;  
+}
+#dropdown-menu{
+    border: none;
+}
+#dropdown-item{
+    font-size: 15px;
+    padding: 15px;
+    
+}
+#dropdown-item:hover{
+    color: #fc2779;
+     font-size: 16px;
+     background-color: white;
+ }
+ #dropdown:hover #dropdown-menu {display: block;}
+
+ .dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-menu{
+    border: none;
+}
+.dropdown-item{
+    font-size: 15px;
+    padding: 15px;
+}
+.dropdown-item:hover{
+    color: #fc2779;
+     font-size: 16px;
+     background-color: white;
+ }
+ .dropdown:hover .dropdown-menu {display: block;}
+.fas:hover{
+ color: #fc2779;
+}
+.fas:active{
+    color: #fc2779;
+}

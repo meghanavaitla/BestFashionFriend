@@ -1,8 +1,5 @@
-.html{
-    background: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-fashion-color-clothing-promotion-poster-background-image_190509.jpg) no-repeat;
-}
 .logo-name{
-    font-size: larger;
+    font-size: 2em;
     font-family: comic sans ms;
     text-align: center;
     background-color: aqua;
@@ -19,12 +16,15 @@
 .nav-item:hover{
 
     color: #fc2779;
-    font-size: 16px;
+   
     background-color: white;
     
 }
 nav ul li a:hover{
     color: #fc2779;
+    font-size:large;
+
+
 }
 .nav-link:hover{
    
@@ -47,7 +47,8 @@ nav ul li a:hover{
 }
 #dropdown-item:hover{
     color: #fc2779;
-     font-size: 16px;
+    font-size:large;
+   font-style: initial;
      background-color: white;
  }
  #dropdown:hover #dropdown-menu {display: block;}
@@ -66,7 +67,7 @@ nav ul li a:hover{
 }
 .dropdown-item:hover{
     color: #fc2779;
-     font-size: 16px;
+    font-size:large;
      background-color:white;
  }
  .dropdown:hover .dropdown-menu {display: block;}

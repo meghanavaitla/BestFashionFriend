@@ -1,70 +1,131 @@
-<html> 
 <div class="logo-name">
-    <p style="padding-top: 2%; padding-bottom: 2%;">Best Fashion Friend</p>
+  <p style="padding-top: 2%; padding-bottom: 2%;">Best Fashion Friend</p>
 </div>
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" routerLink="">AboutUs</a>
-                </li>
-                <li class="nav-item dropdown" id="dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="women" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Women
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu">
-                        <a class="dropdown-item" id="dropdown-item" routerLink="blouses">Blouses</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="bottomwear">Bottoms</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="traditionalwear">Ethnic Wear</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="traditionalwear">Traditional Wear</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="womenaccessories">Accessories</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" id="dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="men" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Men
-                    </a>
-                    <div class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" id="dropdown-item" routerLink="shorts">Shorts</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="bottoms">Bottoms</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="jackets">Jackets</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="tshirts">T-shirts</a>
-                        <a class="dropdown-item" id="dropdown-item" routerLink="menaccessories">Accessories</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="whishlist">
-                        <i class="fas fa-heart"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="cart">
-                        <i class="fas fa-shopping-bag"></i>
-                    </a>
-                </li>
-                <li class="nav-item dropdown" id="nav-link">
-                    <a class="nav-link" routerLink="login">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" routerLink="signup">SIGN UP</a>
-                        <a class="dropdown-item" routerLink="login">LOGIN</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink=""
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">AboutUs</a>
+        </li>
+        <li class="nav-item dropdown" id="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            routerLink="women"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Women
+          </a>
+          <div
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdown"
+            id="dropdown-menu"
+          >
+            <a class="dropdown-item" id="dropdown-item" routerLink="blouses"
+              >Blouses</a
+            >
+            <a class="dropdown-item" id="dropdown-item" routerLink="bottomwear"
+              >Bottoms</a
+            >
+            <a
+              class="dropdown-item"
+              id="dropdown-item"
+              routerLink="traditionalwear"
+              >Ethnic Wear</a
+            >
+            <a
+              class="dropdown-item"
+              id="dropdown-item"
+              routerLink="traditionalwear"
+              >Traditional Wear</a
+            >
+            <a
+              class="dropdown-item"
+              id="dropdown-item"
+              routerLink="womenaccessories"
+              >Accessories</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown" id="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            routerLink="men"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Men
+          </a>
+          <div
+            class="dropdown-menu"
+            id="dropdown-menu"
+            aria-labelledby="navbarDropdown"
+          >
+            <a class="dropdown-item" id="dropdown-item" routerLink="shorts"
+              >Shorts</a
+            >
+            <a class="dropdown-item" id="dropdown-item" routerLink="bottoms"
+              >Bottoms</a
+            >
+            <a class="dropdown-item" id="dropdown-item" routerLink="jackets"
+              >Jackets</a
+            >
+            <a class="dropdown-item" id="dropdown-item" routerLink="tshirts"
+              >T-shirts</a
+            >
+            <a
+              class="dropdown-item"
+              id="dropdown-item"
+              routerLink="menaccessories"
+              >Accessories</a
+            >
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="whishlist">
+            <i class="fas fa-heart"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="cart">
+            <i class="fas fa-shopping-bag"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown" id="nav-link">
+          <a class="nav-link" routerLink="login">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="signup">SIGN UP</a>
+            <a class="dropdown-item" routerLink="login">LOGIN</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
-</html>

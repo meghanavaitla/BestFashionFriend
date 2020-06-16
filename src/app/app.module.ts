@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +22,8 @@ import { JacketsComponent } from './jackets/jackets.component';
 import { TshirtComponent } from './tshirt/tshirt.component';
 import { MenaccessoriesComponent } from './menaccessories/menaccessories.component';
 import { ShortsComponent } from './shorts/shorts.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +42,16 @@ import { ShortsComponent } from './shorts/shorts.component';
     JacketsComponent,
     TshirtComponent,
     MenaccessoriesComponent,
-    ShortsComponent
+    ShortsComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

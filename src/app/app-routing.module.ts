@@ -12,7 +12,8 @@ import { TshirtComponent } from './tshirt/tshirt.component';
 import { ShortsComponent } from './shorts/shorts.component';
 import { JacketsComponent } from './jackets/jackets.component';
 import { MenaccessoriesComponent } from './menaccessories/menaccessories.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'women',component:WomenComponent},
@@ -25,7 +26,9 @@ const routes: Routes = [
   {path:'bottomwear',component:BottomwearComponent},
   {path:'shorts',component:ShortsComponent},
   {path:'jackets',component:JacketsComponent},
-  {path:'menaccessories',component:MenaccessoriesComponent}
+  {path:'menaccessories',component:MenaccessoriesComponent},
+  {path:'signup',component:SignupComponent},
+  {path:'login',component:LoginComponent},
 
 ];
 

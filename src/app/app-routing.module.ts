@@ -7,6 +7,12 @@ import { BlousesComponent } from './blouses/blouses.component';
 import { BottomsComponent } from './bottoms/bottoms.component';
 import { TraditionalComponent } from './traditional/traditional.component';
 import { WaccessoriesComponent } from './waccessories/waccessories.component';
+import { BottomwearComponent } from './bottomwear/bottomwear.component';
+import { TshirtComponent } from './tshirt/tshirt.component';
+import { ShortsComponent } from './shorts/shorts.component';
+import { JacketsComponent } from './jackets/jackets.component';
+import { MenaccessoriesComponent } from './menaccessories/menaccessories.component';
+
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'women',component:WomenComponent},
@@ -15,7 +21,11 @@ const routes: Routes = [
   {path:'bottoms',component:BottomsComponent},
   {path:'traditionalwear',component:TraditionalComponent},
   {path:'womenaccessories',component:WaccessoriesComponent},
-  
+  {path:'tshirts',component:TshirtComponent},
+  {path:'bottomwear',component:BottomwearComponent},
+  {path:'shorts',component:ShortsComponent},
+  {path:'jackets',component:JacketsComponent},
+  {path:'menaccessories',component:MenaccessoriesComponent}
 
 ];
 

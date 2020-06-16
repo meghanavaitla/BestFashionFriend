@@ -6,7 +6,11 @@ var blouse = require('./backend/models/blouses');
 var bottoms = require('./backend/models/bottomwear');
 var womenaccessories = require('./backend/models/womenaccessories');
 var traditionalwear = require('./backend/models/traditionalwear');
-
+var bottomwear = require('./backend/models/bottomwear');
+var tshirt = require('./backend/models/tshirt');
+var jackets = require('./backend/models/jackets');
+var menaccessories = require('./backend/models/menaccessories');
+var shorts = require('./backend/models/shorts');
 
 // ************************ DB Connection ************************
 
@@ -67,6 +71,81 @@ app.get('/api/blouse', (req, res) => {
   });
   app.get('/api/bottoms', (req, res) => {
     bottoms.find({}, null, {
+      limit: 20
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/bottomwear: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+
+  });
+
+  app.get('/api/tshirt', (req, res) => {
+    tshirt.find({}, null, {
+      limit: 20
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/tshirt: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+
+  });
+
+  app.get('/api/jackets', (req, res) => {
+    jackets.find({}, null, {
+      limit: 20
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/jackets: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  }); 
+  app.get('/api/menaccessories', (req, res) => {
+    menaccessories.find({}, null, {
+      limit: 20
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/menaccessories: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  });
+
+  app.get('/api/shorts', (req, res) => {
+    shorts.find({}, null, {
+      limit: 20
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/shorts: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  });
+  app.get('/api/bottomwear', (req, res) => {
+    bottomwear.find({}, null, {
       limit: 20
     }, (err, docs) => {
       if (err) {

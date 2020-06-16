@@ -16,6 +16,11 @@ import { EthnicComponent } from './ethnic/ethnic.component';
 import { BottomsComponent } from './bottoms/bottoms.component';
 import { TraditionalComponent } from './traditional/traditional.component';
 import { WaccessoriesComponent } from './waccessories/waccessories.component';
+import { BottomwearComponent } from './bottomwear/bottomwear.component';
+import { JacketsComponent } from './jackets/jackets.component';
+import { TshirtComponent } from './tshirt/tshirt.component';
+import { MenaccessoriesComponent } from './menaccessories/menaccessories.component';
+import { ShortsComponent } from './shorts/shorts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,12 @@ import { WaccessoriesComponent } from './waccessories/waccessories.component';
     EthnicComponent,
     BottomsComponent,
     TraditionalComponent,
-    WaccessoriesComponent
+    WaccessoriesComponent,
+    BottomwearComponent,
+    JacketsComponent,
+    TshirtComponent,
+    MenaccessoriesComponent,
+    ShortsComponent
   ],
   imports: [
     BrowserModule,

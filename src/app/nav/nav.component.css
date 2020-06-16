@@ -1,10 +1,12 @@
 .logo-name{
-    font-size: 2em;
-    font-family: comic sans ms;
+    font-size: 3em;
+    font-family: 'Piedra', cursive;
     text-align: center;
-    background-color: aqua;
-    font-weight: 600;
+    /* background-color: aqua; */
+    background: url(https://img.freepik.com/free-vector/colourful-banner_1048-10612.jpg?size=626&ext=jpg    );
+    font-weight: 500;
 }
+
 .nav-item{
     margin-right: 15%;
     color: black;
@@ -22,7 +24,7 @@
 }
 nav ul li a:hover{
     color: #fc2779;
-    font-size:large;
+   
 
 
 }
@@ -76,4 +78,7 @@ nav ul li a:hover{
 }
 .fas:active{
     color: #fc2779;
+}
+.container-fluid{
+    background: #ffcdd2;
 }

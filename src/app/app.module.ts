@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,11 @@ import { WomenComponent } from './women/women.component';
 import { MenComponent } from './men/men.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { BlousesComponent } from './blouses/blouses.component';
+import { EthnicComponent } from './ethnic/ethnic.component';
+import { BottomsComponent } from './bottoms/bottoms.component';
+import { TraditionalComponent } from './traditional/traditional.component';
+import { WaccessoriesComponent } from './waccessories/waccessories.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +24,18 @@ import { FooterComponent } from './footer/footer.component';
     AboutusComponent,
     WomenComponent,
     MenComponent,
-    FooterComponent
+    FooterComponent,
+    BlousesComponent,
+    EthnicComponent,
+    BottomsComponent,
+    TraditionalComponent,
+    WaccessoriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

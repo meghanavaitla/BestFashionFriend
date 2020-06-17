@@ -2,15 +2,15 @@ const express = require('express')
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors =require('cors');
-var blouse = require('./backend/models/blouses');
-var bottoms = require('./backend/models/bottoms');
-var womenaccessories = require('./backend/models/womenaccessories');
-var traditionalwear = require('./backend/models/traditionalwear');
-var bottomwear = require('./backend/models/bottomwear');
-var tshirt = require('./backend/models/tshirt');
-var jackets = require('./backend/models/jackets');
-var menaccessories = require('./backend/models/menaccessories');
-var shorts = require('./backend/models/shorts');
+var blouse = require('./models/blouses')
+var bottoms = require('./models/bottoms');
+var womenaccessories = require('./models/womenaccessories');
+var traditionalwear = require('./models/traditionalwear');
+var bottomwear = require('./models/bottomwear');
+var tshirt = require('./models/tshirt');
+var jackets = require('./models/jackets');
+var menaccessories = require('./models/menaccessories');
+var shorts = require('./models/shorts');
 
 // ************************ DB Connection ************************
 

@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var bottomsSchema = new Schema({
+var bottomwearSchema = new Schema({
 
     name: String,
     front: String,
@@ -9,5 +9,5 @@ var bottomsSchema = new Schema({
     size: []
 }
 );
-var bottoms = mongoose.model('bottoms', bottomsSchema, 'bottoms');
-module.exports = bottoms;
+var bottomwear = mongoose.model('bottomwear', bottomwearSchema, 'bottomwear');
+module.exports = bottomwear;

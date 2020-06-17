@@ -2,7 +2,7 @@ const express = require('express')
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors =require('cors');
-var blouse = require('./models/blouses')
+var blouse = require('./models/blouses');
 var bottoms = require('./models/bottoms');
 var womenaccessories = require('./models/womenaccessories');
 var traditionalwear = require('./models/traditionalwear');
@@ -55,7 +55,7 @@ app.use(cors());
 
 
 // ****** Body Parser *******
-app.get('/api/blouse', (req, res) => {
+app.get('/blouse', (req, res) => {
     blouse.find({},null, {
       limit: 20
     }, (err, docs) => {
@@ -69,7 +69,7 @@ app.get('/api/blouse', (req, res) => {
       }
     });
   });
-  app.get('/api/bottoms', (req, res) => {
+  app.get('/bottoms', (req, res) => {
     bottoms.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -85,7 +85,7 @@ app.get('/api/blouse', (req, res) => {
 
   });
 
-  app.get('/api/tshirt', (req, res) => {
+  app.get('/tshirt', (req, res) => {
     tshirt.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -101,7 +101,7 @@ app.get('/api/blouse', (req, res) => {
 
   });
 
-  app.get('/api/jackets', (req, res) => {
+  app.get('/jackets', (req, res) => {
     jackets.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -115,7 +115,7 @@ app.get('/api/blouse', (req, res) => {
       }
     });
   }); 
-  app.get('/api/menaccessories', (req, res) => {
+  app.get('/menaccessories', (req, res) => {
     menaccessories.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -130,7 +130,7 @@ app.get('/api/blouse', (req, res) => {
     });
   });
 
-  app.get('/api/shorts', (req, res) => {
+  app.get('/shorts', (req, res) => {
     shorts.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -144,7 +144,7 @@ app.get('/api/blouse', (req, res) => {
       }
     });
   });
-  app.get('/api/bottomwear', (req, res) => {
+  app.get('/bottomwear', (req, res) => {
     bottomwear.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -159,7 +159,7 @@ app.get('/api/blouse', (req, res) => {
     });
 
   });
-    app.get('/api/womenaccessories', (req, res) => {
+    app.get('/womenaccessories', (req, res) => {
     womenaccessories.find({}, null, {
       limit: 20
     }, (err, docs) => {
@@ -173,7 +173,7 @@ app.get('/api/blouse', (req, res) => {
       }
     });
   });
-  app.get('/api/traditionalwear', (req, res) => {
+  app.get('/traditionalwear', (req, res) => {
     traditionalwear.find({}, null, {
       limit: 20
     }, (err, docs) => {

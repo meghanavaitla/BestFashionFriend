@@ -1,5 +1,5 @@
 body {
-    background-color: #000
+    background-color: #F5F5F5;
 }
 
 .padding {
@@ -45,7 +45,7 @@ h2 {
     outline: none !important
 }
 .bg{
-    background: #ffcdd2;
+   background-color: #ffcdd2;
 }
 
 .btn-blue:hover,

@@ -6,7 +6,6 @@
     background: url(https://img.freepik.com/free-vector/colourful-banner_1048-10612.jpg?size=626&ext=jpg    );
     font-weight: 500;
 }
-
 .nav-item{
     margin-right: 15%;
     color: black;
@@ -24,7 +23,7 @@
 }
 nav ul li a:hover{
     color: #fc2779;
-   
+    background-color: white;
 
 
 }

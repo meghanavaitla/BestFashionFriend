@@ -45,7 +45,7 @@ h2 {
     outline: none !important
 }
 .bg{
-    background-image:URL("https://wallpapercave.com/wp/wp3130198.jpg");
+    background: #ffcdd2;
 }
 
 .btn-blue:hover,

@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var bcrypt=require('bcrypt')
+var bcrypt=require('bcryptjs')
 var numSaltRounds = 10;
 var userSchema = new mongoose.Schema({
     firstname: String,

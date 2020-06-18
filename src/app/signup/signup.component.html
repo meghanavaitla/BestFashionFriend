@@ -3,11 +3,10 @@
         <h3>Create your Account</h3>
         <div class="row">
             <div class="col-md-3">
-
             </div>
             <div class=" col-md-6">
                 <label for="pwd"></label>
-                <input type="text" class="form-control" placeholder="First name">
+                <input [(ngModel)]="registerData.firstname" type="text" class="form-control" placeholder="First name" name="firstname">
             </div>
         </div>
         <div class="row"> 
@@ -16,7 +15,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <input type="text" class="form-control" placeholder="Last name">
+                <input [(ngModel)]="registerData.lastname" name="lastname" type="text" class="form-control" placeholder="Last name">
             </div>
         </div>
         <div class="row">
@@ -25,7 +24,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <input type="text" class="form-control" placeholder="Email">
+                <input [(ngModel)]="registerData.email" name="email" type="text" class="form-control" placeholder="Email">
             </div>
         </div>
         <div class="row"> 
@@ -34,7 +33,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" [(ngModel)]="registerData.password" name="password" class="form-control" placeholder="Password">
             </div>
         </div>
         <div class="row"> 
@@ -43,8 +42,8 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <button type="submit" class="btn btn-blue btn-block">Sign Up</button> <br>
-                <h6 style="text-align: center;">Already Registered? <a href="../login/" >Login!</a></h6>
+                <button type="submit" class="btn btn-blue btn-block" (click)="post()">Sign Up</button> <br>
+                <h6 style="text-align: center;">Already Registered? <a href="#">Login!</a></h6>
                
             </div>
         </div>

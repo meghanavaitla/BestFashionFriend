@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule , HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -24,6 +23,13 @@ import { MenaccessoriesComponent } from './menaccessories/menaccessories.compone
 import { ShortsComponent } from './shorts/shorts.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import {AuthinterceptorService} from './authinterceptor.service';
+import {AuthService}from './auth.service';
+import {ApiService} from './api.service';
+import {FlashMessagesModule} from 'angular2-flash-messages';
+import { ProfileComponent } from './profile/profile.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,16 +50,22 @@ import { SignupComponent } from './signup/signup.component';
     MenaccessoriesComponent,
     ShortsComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FlashMessagesModule
   ],
-  providers: [],
+  providers: [ApiService,AuthService,{
+    provide:HTTP_INTERCEPTORS,
+    useClass:AuthinterceptorService,
+    multi :true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,6 +14,8 @@ import { JacketsComponent } from './jackets/jackets.component';
 import { MenaccessoriesComponent } from './menaccessories/menaccessories.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'women',component:WomenComponent},
@@ -29,7 +31,7 @@ const routes: Routes = [
   {path:'menaccessories',component:MenaccessoriesComponent},
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
-
+  {path:'profile',component:ProfileComponent}
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <input type="text" class="form-control" placeholder="Email">
+                <input [(ngModel)]="loginData.email" name="email" type="text" class="form-control" placeholder="Email" required>
             </div>
         </div>
         <div class="row"> 
@@ -17,7 +17,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <input type="password" class="form-control" placeholder="Password">
+                <input [(ngModel)]="loginData.password" name="password" type="password" class="form-control" placeholder="Password" required>
             </div>
         </div>
         <div class="row"> 
@@ -26,7 +26,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pwd"></label>
-                <button type="submit" class="btn btn-blue btn-block">Login</button> <br>
+                <button type="submit" class="btn btn-blue btn-block" (click)="post()">Login</button> <br>
                 <h6 style="text-align: center;">Forgot Password?<a href="#">Click here</a></h6>
                
             </div>

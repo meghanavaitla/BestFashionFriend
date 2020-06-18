@@ -5,13 +5,21 @@
             <img src="{{b.front}}" class="card-img-top">
             <img src="{{b.back}}" class="img-top">
             <div class="card-body">
-                <h3 data-toggle="tooltip" title="{{b.name|lowercase}}">
-                    {{(b.name.length>14)?(b.name | slice:0:12)+'..':(b.name)}}
-                </h3>
-                <p style="float: left; " class="card-text"><b> &#x20b9;{{b.price}}/-</b></p>
-            <i class="fas fa-heart" style="float:right"></i>    
+                <h4 style="font-family: 'Lato', sans-serif;" data-toggle="tooltip" title="{{b.name|lowercase}}">
+                    {{(b.name.length>18)?(b.name | slice:0:16)+'..':(b.name)}}
+                </h4>
+                <h6 style="text-align: center;color:yellowgreen">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </h6>
+                <small><s> &#x20b9;{{b.price+300}}/-</s></small>
+                <span  class="card-text"><b> &#x20b9;{{b.price}}/-</b></span>
+            <i class="far fa-heart" style="float:right"></i>    
             </div>
-            <button style="width: 100%;" class="btn btn-success" (click)="addItem(i)">Add to Cart</button>
+            <button style="width: 100%;" class="btn btn-warning" (click)="addItem(i)">Add to Cart &nbsp;<i class="fas fa-shopping-cart"></i></button>
         </div>
     </div>
 </div>

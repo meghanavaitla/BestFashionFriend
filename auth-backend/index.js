@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var jwt = require('jwt-simple')
 var bcrypt = require('bcrypt')
-var User = require('./user');
+var User = require('./models/user');
 
 mongoose.Promise = Promise;
 app.use(cors());
@@ -86,7 +86,7 @@ mongoose.connect("mongodb+srv://Meghana_07:vnrvjiet@cluster0-lahh1.mongodb.net/F
     if (!err)
         console.log('Connected to DB')
 })
-port =8000;
+port = process.env.PORT||8000;
 app.listen(port, () => {
     console.log('server is running on port '+port);
-})
+});

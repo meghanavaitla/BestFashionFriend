@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   users =[]
-  path = 'https://localhost:8000'
+  path = 'https://authoapi.herokuapp.com/';
     constructor(private http:HttpClient) { }
     
     getUsers()

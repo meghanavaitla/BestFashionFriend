@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class AuthService {
-  path= 'http://localhost:3000';
+  path= 'https://authoapi.herokuapp.com';
   TOKEN_KEY='token'
   constructor(private http:HttpClient) { }
   get token()

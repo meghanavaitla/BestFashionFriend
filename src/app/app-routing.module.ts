@@ -15,6 +15,7 @@ import { MenaccessoriesComponent } from './menaccessories/menaccessories.compone
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -31,7 +32,9 @@ const routes: Routes = [
   {path:'menaccessories',component:MenaccessoriesComponent},
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
-  {path:'profile',component:ProfileComponent}
+  {path:'profile',component:ProfileComponent},
+  {path:'cart',component:CartComponent}
+
 ];
 
 @NgModule({

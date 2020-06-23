@@ -28,6 +28,7 @@ import {AuthService}from './auth.service';
 import {ApiService} from './api.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import { ProfileComponent } from './profile/profile.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { ProfileComponent } from './profile/profile.component';
     ShortsComponent,
     LoginComponent,
     SignupComponent,
-    ProfileComponent
+    ProfileComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

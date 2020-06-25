@@ -26,7 +26,7 @@ import { SignupComponent } from './signup/signup.component';
 import {AuthinterceptorService} from './authinterceptor.service';
 import {AuthService}from './auth.service';
 import {ApiService} from './api.service';
-import {FlashMessagesModule} from 'angular2-flash-messages';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
 
@@ -61,7 +61,7 @@ import { CartComponent } from './cart/cart.component';
     NgbModule,
     HttpClientModule,
     FormsModule,
-    FlashMessagesModule
+    FlashMessagesModule.forRoot()
   ],
   providers: [ApiService,AuthService,{
     provide:HTTP_INTERCEPTORS,

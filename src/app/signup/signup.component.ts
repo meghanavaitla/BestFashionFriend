@@ -12,7 +12,8 @@ export class SignupComponent implements OnInit {
   lastname: String;
   email: String;
   password: String;
-  constructor(public authservice:AuthService) { }
+    constructor(public authservice:AuthService,
+      private flashMessage: FlashMessagesService) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +27,14 @@ export class SignupComponent implements OnInit {
     }
     console.log(this.registerData);
     this.authservice.sendRegistrationData(this.registerData);
-    
+    if(this.authservice.isAuthenticated)
+    {
+      this.flashMessage.show('Your Successfully Registered',{cssClass:'alert-success',timeout:3000});
+    }
+    else{
+      this.flashMessage.show('Something Went Wrong',{cssClass:'alert-danger',timeout:3000});
+
+    }
     
   }
 }

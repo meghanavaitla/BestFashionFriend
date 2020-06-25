@@ -29,7 +29,7 @@ export class SignupComponent implements OnInit {
     }
     console.log(this.registerData);
     this.authservice.sendRegistrationData(this.registerData);
-    if(this.registerData)
+    if(this.authservice.isAuthenticated)
     {
       this.flashMessage.show('Your Successfully Registered',{cssClass:'alert-success',timeout:4000});
       this.router.navigate(['']);

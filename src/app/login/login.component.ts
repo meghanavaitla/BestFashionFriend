@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   post(){
     
     this.authservice.loginuserData(this.loginData);
-    if(this.authservice.isAuthenticated)
+    if(this.loginData)
     {
       this.flashMessage.show('you are now Logged in',{cssClass:'alert-success',timeout:5000});
     }

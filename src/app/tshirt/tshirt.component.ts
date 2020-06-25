@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { CartService } from '../cart.service';
+import {AuthService}from '../auth.service';
 
 @Component({
   selector: 'app-tshirt',
@@ -9,7 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class TshirtComponent implements OnInit {
   tshirt;
-  constructor(private data:DataService, private cart:CartService) { }
+  constructor(private data:DataService, private cart:CartService,private authservice:AuthService) { }
 
   ngOnInit(): void {
     this.data.getTshirt().subscribe(d=>{
@@ -17,8 +18,13 @@ export class TshirtComponent implements OnInit {
     })
   }
   addItem(idx){
+    if(this.authservice.isAuthenticated)
+    {
     var ts = this.tshirt[idx];
   this.cart.cartItems.push(ts);
+    }
+    else
+    alert('Login to add');
 }
 
 }

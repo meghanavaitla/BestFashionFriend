@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { CartService } from '../cart.service';
+import {AuthService}from '../auth.service';
 
 @Component({
   selector: 'app-blouses',
@@ -10,7 +11,7 @@ import { CartService } from '../cart.service';
 export class BlousesComponent implements OnInit {
 
   blouses;
-  constructor(private data:DataService,private cart:CartService) { }
+  constructor(private data:DataService,private cart:CartService,private authservice:AuthService) { }
 
    ngOnInit() {
     this.data.getBlouses().subscribe(data=>{
@@ -18,8 +19,16 @@ export class BlousesComponent implements OnInit {
     });
   }
   addItem(idx){
+    if(this.authservice.isAuthenticated)
+    {
      var blouse = this.blouses[idx];
    this.cart.cartItems.push(blouse);
+   alert('added one item');
+    }
+    else{
+      alert("Login to add");
+    }
+  
   
   }
 

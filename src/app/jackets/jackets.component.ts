@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { CartService } from '../cart.service';
+import {AuthService}from '../auth.service';
+
 @Component({
   selector: 'app-jackets',
   templateUrl: './jackets.component.html',
@@ -8,7 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class JacketsComponent implements OnInit {
 jackets;
-  constructor(private data:DataService,private cart:CartService) { }
+  constructor(private data:DataService,private cart:CartService,private authservice:AuthService) { }
 
   ngOnInit(): void {
     this.data.getJackets().subscribe(d=>{
@@ -16,8 +18,13 @@ jackets;
     })
   }
   addItem(idx){
+    if(this.authservice.isAuthenticated)
+    {
     var jacket = this.jackets[idx];
   this.cart.cartItems.push(jacket);
+    }
+    else
+    alert('Login to add');
 }
 
 }

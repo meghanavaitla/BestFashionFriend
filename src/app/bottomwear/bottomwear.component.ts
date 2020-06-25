@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { CartService } from '../cart.service';
+import {AuthService}from '../auth.service';
+
 @Component({
   selector: 'app-bottomwear',
   templateUrl: './bottomwear.component.html',
@@ -8,7 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class BottomwearComponent implements OnInit {
   bottomwear;
-  constructor(private data:DataService,private cart:CartService) { }
+  constructor(private data:DataService,private cart:CartService,private authservice:AuthService) { }
 
   ngOnInit(): void {
     this.data.getBottomwear().subscribe(d=>{
@@ -16,7 +18,13 @@ export class BottomwearComponent implements OnInit {
     })
   }
   addItem(idx){
+    if(this.authservice.isAuthenticated)
+    {
     var wbottom = this.bottomwear[idx];
   this.cart.cartItems.push(wbottom);
+  alert('added one item');
+    }
+    else
+    alert('login to add');
 }
 }

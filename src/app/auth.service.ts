@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class AuthService {
-  path= 'https://authoapi.herokuapp.com';
+  
+  path= 'https://bffauth.herokuapp.com';
   TOKEN_KEY='token'
   constructor(private http:HttpClient) { }
   get token()
@@ -26,8 +27,9 @@ export class AuthService {
     
     this.http.post<any>(this.path+'/register',(registerData)).subscribe(res=> {  
     
-    console.log(res)
-    localStorage.setItem('token',res.token)
+    console.log(res);
+    localStorage.setItem('token',res.token);
+
   })
   }
 
@@ -40,6 +42,7 @@ export class AuthService {
       console.log(res)
       localStorage.setItem('token',res.token)
     });
+    return true;
   }
 
   }

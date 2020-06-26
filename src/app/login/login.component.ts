@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService}from '../auth.service';
 import {FlashMessagesService} from 'angular2-flash-messages';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,18 +14,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   loginData:any = { }
-  constructor(public authservice:AuthService,private flashMessage: FlashMessagesService) {} 
+  constructor(public authservice:AuthService,private flashMessage: FlashMessagesService,private router:Router) {} 
   post(){
     
     this.authservice.loginuserData(this.loginData);
-    if(this.authservice.isAuthenticated)
-    {
-      this.flashMessage.show('you are now Logged in',{cssClass:'alert-success',timeout:5000});
-    }
-    else
-    {
-      this.flashMessage.show('Error in logging',{cssClass:'alert-danger',timeout:5000});
-    }
+    
   }
   
 

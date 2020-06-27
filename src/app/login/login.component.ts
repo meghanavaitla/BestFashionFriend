@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   post(){
     
     this.authservice.loginuserData(this.loginData);
-    
+    this.router.navigate(['']);
   }
   
 

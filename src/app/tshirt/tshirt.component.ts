@@ -22,6 +22,7 @@ export class TshirtComponent implements OnInit {
     {
     var ts = this.tshirt[idx];
   this.cart.cartItems.push(ts);
+  alert('added one item');
     }
     else
     alert('Login to add');

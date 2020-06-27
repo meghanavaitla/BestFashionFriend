@@ -21,15 +21,9 @@ export class SignupComponent implements OnInit {
   }
   registerData:any ={}
   post(){
-    const user = {
-      firstname: this.firstname,
-      lastname: this.lastname,
-      email: this.email,
-      password: this.password
-    }
     console.log(this.registerData);
     this.authservice.sendRegistrationData(this.registerData);
-    
+    this.router.navigate(['']);
     
   }
 }

@@ -23,6 +23,7 @@ export class TraditionalComponent implements OnInit {
 {    
     var t = this.traditionalwear[idx];
   this.cart.cartItems.push(t);
+  alert('added one time');
 }
 else
 alert('Login to add');

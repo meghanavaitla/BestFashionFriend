@@ -22,6 +22,7 @@ jackets;
     {
     var jacket = this.jackets[idx];
   this.cart.cartItems.push(jacket);
+  alert('added one time');
     }
     else
     alert('Login to add');

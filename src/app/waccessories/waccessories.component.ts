@@ -23,6 +23,7 @@ export class WaccessoriesComponent implements OnInit {
     {
     var wa = this.womenaccessories[idx];
   this.cart.cartItems.push(wa);
+  alert('added one item');
     }
     else
     alert('Login to add');

@@ -24,6 +24,7 @@ export class BlousesComponent implements OnInit {
      var blouse = this.blouses[idx];
    this.cart.cartItems.push(blouse);
    alert('added one item');
+
     }
     else{
       alert("Login to add");

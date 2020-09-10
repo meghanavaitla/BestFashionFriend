@@ -29,7 +29,9 @@ import {ApiService} from './api.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,10 @@ import { CartComponent } from './cart/cart.component';
     NgbModule,
     HttpClientModule,
     FormsModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    BrowserAnimationsModule,
+    MatBadgeModule,
+    MatIconModule
   ],
   providers: [ApiService,AuthService,{
     provide:HTTP_INTERCEPTORS,

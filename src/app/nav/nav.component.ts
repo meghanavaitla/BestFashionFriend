@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../auth.service';
+import { CartService } from '../cart.service';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,9 +9,10 @@ import {AuthService} from '../auth.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(public authservice:AuthService) { }
-
+  constructor(public authservice:AuthService,private cart: CartService) { }
+cartItems;
   ngOnInit(): void {
+    this.cartItems=this.cart.cartItems;
   }
 
 }

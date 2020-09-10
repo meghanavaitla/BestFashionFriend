@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
  
   constructor(private cart: CartService,private data: DataService) { }
 cartItems;
-
+sum;
   ngOnInit() {
     this.cartItems=this.cart.cartItems;
   }
@@ -23,6 +23,11 @@ remove(indx) {
     this.data.completeOrder(this.cartItems).subscribe(res => 
       { alert("Checkout Successful"); }
     )
+  }
+
+  totalamount()
+  {
+    
   }
   
 
